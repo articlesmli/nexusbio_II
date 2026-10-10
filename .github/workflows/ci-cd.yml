@@ -35,7 +35,7 @@ jobs:
 
       - name: Run Pytest Suite
         run: |
-          PYTHONPATH=./cheminformatics_sandbox pytest tests/
+          PYTHONPATH=cheminformatics_sandbox pytest tests/
 
   deploy-azure:
     needs: [test-python]
