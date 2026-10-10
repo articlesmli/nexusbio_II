@@ -1,7 +1,15 @@
-# NexusBio Cheminformatics Sandbox
+# NexusBio Cheminformatics Sandbox (`nexusbio_II`)
 
-NexusBio is an automated cheminformatics and bioinformatics sandbox environment designed for scalable containerized processing. This repository features a fully automated CI/CD pipeline using GitHub Actions, successfully migrated to a pure **Microsoft Azure Container Apps and Azure Container Registry (ACR)** architecture.
+NexusBio_II is an automated cheminformatics and bioinformatics sandbox environment designed for scalable containerised processing. This repository (`nexusbio_II`) represents an advanced evolution of the original `nexusbio` project, featuring a fully automated CI/CD pipeline using GitHub Actions migrated to a pure **Microsoft Azure Container Apps and Azure Container Registry (ACR)** architecture.
 
+---
+
+## What's New in `nexusbio_II`?
+
+While the core multi-agent components from the original project—such as **literature mining**, **molecular design**, and **pathway synthesis**—remain foundational, **`nexusbio_II`** introduces several key architectural and structural upgrades:
+
+- **Expanded Multi-Agent Intelligence**: Builds upon the original workflow by integrating specialised new worker nodes for **ADMET toxicity prediction** and **patent/clinical intelligence** under `lambda_orchestrator/agents/`.
+- **Enhanced Orchestration & Testing**: Added comprehensive end-to-end multi-agent orchestration testing (`test_orchestrator.py`) to validate complex cross-agent execution chains.
 ---
 
 ## Project Directory Structure
@@ -53,7 +61,7 @@ nexusbio/
 
 ## Multi-Agent Pipeline Components
 
-The multi-agent framework features five specialized modular worker nodes:
+The multi-agent framework features five specialised modular worker nodes:
 
 * **Molecular Design Agent** (`molecular_design.py`): Generates and modifies SMILES structures based on design parameters.
 * **ADMET & Toxicity Agent** (`admet_agent.py`): Evaluates molecular structures for Lipinski's Rule of Five, physicochemical properties, and toxicity risks.
@@ -63,7 +71,7 @@ The multi-agent framework features five specialized modular worker nodes:
 
 
 * **Literature Miner Agent** (`literature_miner.py`): Extracts contextual text and references from published research.
-* **Pathway Synthesizer Agent** (`pathway_synthesizer.py`): Analyzes downstream pathway impacts and biological target responses.
+* **Pathway Synthesiser Agent** (`pathway_synthesizer.py`): Analyses downstream pathway impacts and biological target responses.
 * **Orchestration Test Suite** (`test_orchestrator.py`): Validates multi-agent interoperability and end-to-end task chains.
 
 
