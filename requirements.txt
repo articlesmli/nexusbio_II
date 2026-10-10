@@ -1,7 +1,3 @@
-# AWS SDK for accessing Amazon Bedrock frontier models (Claude 3.5 Sonnet / Claude 3 Haiku)
-boto3==1.34.0
-botocore==1.34.0
-
 # Data validation and state management for multi-agent loops
 pydantic==2.6.0
 
@@ -9,10 +5,11 @@ pydantic==2.6.0
 langgraph==0.1.1
 langchain-core>=0.2.0
 
-
 # HTTP client for secure internal communication with the Cheminformatics Sandbox
 httpx==0.26.0
 requests==2.31.0
 
-torch
-transformers
+# Machine Learning & Free BioGPT dependencies
+torch>=2.2.0
+transformers<4.45.0
+sacremoses>=0.1.1
