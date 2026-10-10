@@ -4,8 +4,8 @@ Simulates a workflow where a molecule is evaluated for ADMET properties
 and cross-referenced against public patent/clinical trial databases.
 """
 
-from infrastructure.lambda_orchestrator.agents.admet_agent import ADMETAgent
-from infrastructure.lambda_orchestrator.agents.patent_clinical_agent import PatentClinicalAgent
+from lambda_orchestrator.agents.admet_agent import ADMETAgent
+from lambda_orchestrator.agents.patent_clinical_agent import PatentClinicalAgent
 
 def run_pipeline_orchestration(smiles_input: str, search_term: str):
     print("==================================================")
@@ -31,8 +31,6 @@ def run_pipeline_orchestration(smiles_input: str, search_term: str):
     print("==================================================")
 
 if __name__ == "__main__":
-    # Example test case: Aspirin (SMILES) and query term
     test_smiles = "CC(=O)OC1=CC=CC=C1C(=O)O"
     test_query = "aspirin"
-    
     run_pipeline_orchestration(test_smiles, test_query)
