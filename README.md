@@ -1,4 +1,4 @@
-# NexusBio Cheminformatics Sandbox (`nexusbio_II`)
+# NexusBio II Cheminformatics Sandbox (`nexusbio_II`)
 
 NexusBio_II is an automated cheminformatics and bioinformatics sandbox environment designed for scalable containerised processing. This repository (`nexusbio_II`) represents an advanced evolution of the original `nexusbio` project, featuring a fully automated CI/CD pipeline using GitHub Actions migrated to a pure **Microsoft Azure Container Apps and Azure Container Registry (ACR)** architecture.
 
