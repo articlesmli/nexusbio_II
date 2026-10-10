@@ -1,4 +1,4 @@
-# NexusBio II Cheminformatics Sandbox (`nexusbio_II`)
+# NexusBio_II Cheminformatics Sandbox (`nexusbio_II`)
 
 NexusBio_II is an automated cheminformatics and bioinformatics sandbox environment designed for scalable containerised processing. This repository (`nexusbio_II`) represents an advanced evolution of the original `nexusbio` project, featuring a fully automated CI/CD pipeline using GitHub Actions migrated to a pure **Microsoft Azure Container Apps and Azure Container Registry (ACR)** architecture.
 
@@ -6,7 +6,7 @@ NexusBio_II is an automated cheminformatics and bioinformatics sandbox environme
 
 ## What's New in `nexusbio_II`?
 
-While the core multi-agent components from the original project—such as **literature mining**, **molecular design**, and **pathway synthesis**—remain foundational, **`nexusbio_II`** introduces several key architectural and structural upgrades:
+While the core multi-agent components from the original project, such as **literature mining**, **molecular design**, and **pathway synthesis**—remain foundational, **`nexusbio_II`** introduces several key architectural and structural upgrades:
 
 - **Expanded Multi-Agent Intelligence**: Builds upon the original workflow by integrating specialised new worker nodes for **ADMET toxicity prediction** and **patent/clinical intelligence** under `lambda_orchestrator/agents/`.
 - **Enhanced Orchestration & Testing**: Added comprehensive end-to-end multi-agent orchestration testing (`test_orchestrator.py`) to validate complex cross-agent execution chains.
