@@ -13,3 +13,6 @@ langchain-core>=0.2.0
 # HTTP client for secure internal communication with the Cheminformatics Sandbox
 httpx==0.26.0
 requests==2.31.0
+
+torch
+transformers
